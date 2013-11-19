@@ -93,13 +93,6 @@
 	        Event::run('ushahidi_action.header_item');
         ?>
 
-		// site_message moved under map for glcm (with custom styling) 
-        // <?php if(isset($site_message) AND $site_message != '') { ?>
-		// 	<div class="green-box">
-		//		<h3><?php echo $site_message; ?></h3>
-		//	</div>
-		// <?php } ?>
-
 		<!-- main body -->
 		<div id="middle">
 			<div class="background layoutleft">
