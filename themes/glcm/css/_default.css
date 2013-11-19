@@ -620,5 +620,15 @@ div.search-form {
 }
 
 .report_map {
-  width: 465px;
+     width: 465px;
+}
+
+.home-box hr {
+    border: 0; 
+    height: 1px; 
+    background: #D25E4F; 
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc); 
 }

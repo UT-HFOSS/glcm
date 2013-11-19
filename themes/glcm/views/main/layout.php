@@ -36,11 +36,7 @@ $(document).ready(function() {
 <!-- main body -->
 <div id="main" class="clearingfix">
 	<div id="mainmiddle">
-	<div class="home-box">
-		<p>Share your worry and wisdom on this map to mark and make a new story for the Great Lakes.</p><br /> 
-		<p>Water is not a product or playground, but a commons. Its value is based on how well we share it as a source of life, not as a resource. The Great Lakes are not an inheritance to gamble with, but a gift we are borrowing from future generations.</p><br />
-	  	<p>Each dot on this map tells a story. Add yours to multiply the bonds and power between all those who are committed to revitalizing these amazing waters. Explore the rest of this site to learn more about a Great Lakes Commons and then please share your own story when ready.</p>
-	</div>
+
 		<!-- right column -->
 		<div id="report-map-filter-box" class="clearingfix">
 			<a class="btn toggle" id="filter-menu-toggle" class="" href="#the-filters"><?php echo Kohana::lang('ui_main.filter_reports_by'); ?><span class="btn-icon ic-right">&raquo;</span></a>
@@ -305,7 +301,16 @@ $(document).ready(function() {
 			</div>
 		</div>
 		<!-- / content column -->
+        <?php if(isset($site_message) AND $site_message != '') { ?>
+		    <div class="home-box">
+		        <?php echo $site_message; ?>
+		    </div>
+		<?php } ?><br /> VS <br />
 		<div class="home-box">
+			<p>Share your worry and wisdom on this map to mark and make a new story for the Great Lakes.</p><br /> 
+			<p>Water is not a product or playground, but a commons. Its value is based on how well we share it as a source of life, not as a resource. The Great Lakes are not an inheritance to gamble with, but a gift we are borrowing from future generations.</p><br />
+	  		<p>Each dot on this map tells a story. Add yours to multiply the bonds and power between all those who are committed to revitalizing these amazing waters. Explore the rest of this site to learn more about a Great Lakes Commons and then please share your own story when ready.</p>
+		<hr class="nice-break" />
 			<h6>How to explore this map?</h6>
 			Use the + and – buttons on the top left side of the map to zoom in and out. Use your cursor to drag the map in any direction. Click on a coloured circle to read, watch, or comment on a Report (or story). Use the ‘Filter Reports By’ menu at the top left corner of the map to only show Reports in a chosen Category. Use the ‘Layers’ menu to learn more about the Great Lakes.
 		</div>
