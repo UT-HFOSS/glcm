@@ -7,7 +7,7 @@ requires: 2.6.1
 tested up to: 2.6.1
 author: David Kobia
 author website: http://www.dkfactor.com
-extended runctionality by: Jamie Pistone (jpistonedev@gmail.com)
+extended functionality by: Jamie Pistone (jpistonedev@gmail.com)
 
 == Description ==
 
@@ -19,3 +19,4 @@ extended runctionality by: Jamie Pistone (jpistonedev@gmail.com)
 0.6
 * 2013-03-01   J.Pistone <jpistonedev@gmail.com>   Added support for embedding links in site_submit_report_message
 * 2013-03-29   J.Pistone <jpistonedev@gmail.com>   Extended to allow embedding in page body
+* 2014-02-26   J.Pistone <jpistonedev@gmail.com>   Added JS view control to increase video size

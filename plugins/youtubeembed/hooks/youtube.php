@@ -15,20 +15,17 @@
 
 class youtube {
 
-    // private $report_embed_dims = array();
-    // private $report_message_embed_dims = array();
+	// Default video dimensions
+	var $embed_height = 360;
+	var $embed_width = 540;
 	
 	/**
 	 * Registers the main event add method
 	 */
 	public function __construct()
-	{	
+	{		
 		// Hook into routing
 		Event::add('system.pre_controller', array($this, 'add'));
-		
-	   // Grab dimension for embedded videos
-       //  $this->$report_embed_dims = Kohana::config['youtube.report_embed_dims'];
-       // $this->$report_message_embed_dims = Kohana::config['youtube.report_message_embed_dims'];
 	}
 	
 	/**
@@ -43,6 +40,9 @@ class youtube {
 			{   
 				// Add to report submissions
 				Event::add('ushahidi_filter.report_description', array($this, '_embed_youtube'));
+				
+				// Add resizing script
+				Event::add('ushahidi_action.header_scripts', array($this, '_add_resizing_scipt'));
 			}
 			
 			elseif (Router::$method == 'submit')
@@ -58,6 +58,9 @@ class youtube {
 			{
 				// Add to content on any custom pages
 				Event::add('ushahidi_filter.page_description', array($this, '_embed_youtube'));
+				
+                // Add resizing script
+				Event::add('ushahidi_action.header_scripts', array($this, '_add_resizing_scipt'));
 			}
 		}
 	}
@@ -84,6 +87,11 @@ class youtube {
 		Kohana::instance()->template->content->site_submit_report_message = $site_submit_report_message;
 	}
 	
+	public function _add_resizing_scipt() 
+	{
+		$view = new View('resize_embed_js');
+		$view->render(true);
+	}
 	
 	/**
 	 * Convert the youtube text anchors into links.
@@ -114,7 +122,7 @@ class youtube {
 	{
 		if ($id)
 		{
-			return '<div style="margin:15px 0 15px 0"><object width="560" height="340"><param name="movie" value="//www.youtube.com/v/'.$id.'&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/'.$id.'&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object></div>';
+			return '<div style="margin:15px 0 15px 0"><object width="'.$this->embed_width.'" height="'.$this->embed_height.'"><param name="movie" value="//www.youtube.com/v/'.$id.'&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/'.$id.'&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="'.$this->embed_width.'" height="'.$this->embed_height.'"></embed></object></div>';
 		}
 		else
 		{
