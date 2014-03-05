@@ -18,7 +18,7 @@ $(function(){
 });
 
 //Dynamically create fb like box (allows for equal column heights on main page)
-$(document).ready(function() {
+$(window).load(function() {
         // Reports total column height
         var reports_col_height = $('#block-reports:first-child .content-block').height();
 
