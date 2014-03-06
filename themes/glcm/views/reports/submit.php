@@ -332,13 +332,13 @@
 				<h5>Required Fields (marked with <span style="color: #CC1830">*</span>)</h5>
 				<h6>First Name/Email:</h6> Not seen by users of the map but only the site's administrator in case they need to get in touch for more information. Adding a last name would be helpful but is not required.
 				<h6>Title and Description Text</h6> Aim to write something simple and interesting to read and clearly connects to the purpose of this map -- which is to share how and why the Great Lakes bio-region is or should be experienced and governed as a Commons. 
-				<h6>Categories:</h6> Click on as many Categories that best fit your report so that others can find it and it will be filtered with complimentary reports of the same category.
-				<h6>Find Location:</h6> Search or use the zoom/move map tools to find the location that best fits your report.
+				<h6>Categories:</h6> Click on as many Categories that best fit your story so that others can find it and it will be filtered with complimentary stories of the same category.
+				<h6>Find Location:</h6> Search or use the zoom/move map tools to find the location that best fits your story.
 				<h6>Refine Location Name:</h6> Use the address or closest and most descriptive location you feel comfortable using or have access to.
 				<h5>Optional Fields</h5>
 				<h6>Modify Date:</h6> Change the date information if needed.
 				<h6>Polygon, Line, and Multiple location Tools:</h6> Below the map are 3 options. Simply click the option you want. The pencil + tool allows multiple locations. The polygon and lines tools allow a range of shapes and paths. Simply click once to start drawing and double-click to finish. Use the delete and clear buttons if needed.
-				<h6>Website, Photo, Audio Source or Video Links:</h6> <p>Paste as many web-based or video links as needed that will deepen the user's understanding of the report. Hit the + sign to add another.</p>
+				<h6>Website, Photo, Audio Source or Video Links:</h6> <p>Paste as many web-based or video links as needed that will deepen the user's understanding of the story. Hit the + sign to add another.</p>
 				<h6>Upload Photo:</h6> Browse your computer to select and upload one of these media files. Photos can include a range of expression including: paintings, murals, street art, and any photo of creative work. This site aims to be as visual as possible so always consider adding some content here.
 			</div>	
 		</div>

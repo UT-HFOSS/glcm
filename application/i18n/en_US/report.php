@@ -2,7 +2,7 @@
 $lang = array(
 	'comments_form_error' => 'error!',
 	'country_name' => array(
-		'single_country' => 'This deployment spans within one country only. Please make sure the report location is within the country %s.',
+		'single_country' => 'This deployment spans within one country only. Please make sure the story location is within the country %s.',
 	) ,
 	'custom_field' => array(
 		'values' => 'Please enter a valid value for one of your custom form items.',
@@ -12,27 +12,27 @@ $lang = array(
 		'numeric' => 'Please select a valid item to include in the download.',
 	) ,
 	'data_active' => array(
-		'between' => 'Please select "Reports Awaiting Approval" or "Approved Reports" or both.',
-		'numeric' => 'Please select "Reports Awaiting Approval" or "Approved Reports" or both.',
-		'required' => 'Please select "Reports Awaiting Approval" or "Approved Reports" or both.',
+		'between' => 'Please select "Stories Awaiting Approval" or "Approved Stories" or both.',
+		'numeric' => 'Please select "Stories Awaiting Approval" or "Approved Stories" or both.',
+		'required' => 'Please select "Stories Awaiting Approval" or "Approved Stories" or both.',
 	) ,
 	'data_verified' => array(
-		'between' => 'Please select "Reports Awaiting Verification" or "Verified Reports" or both.',
-		'numeric' => 'Please select "Reports Awaiting Verification" or "Verified Reports" or both.',
-		'required' => 'Please select "Reports Awaiting Verification" or "Verified Reports" or both.',
+		'between' => 'Please select "Stories Awaiting Verification" or "Verified Stories" or both.',
+		'numeric' => 'Please select "Stories Awaiting Verification" or "Verified Stories" or both.',
+		'required' => 'Please select "Stories Awaiting Verification" or "Verified Stories" or both.',
 	) ,
 	'data_point' => array(
-		'between' => 'Please select a valid type of report to download.',
-		'numeric' => 'Please select a valid type of report to download.',
-		'required' => 'Please select a valid type of report to download.',
+		'between' => 'Please select a valid type of story to download.',
+		'numeric' => 'Please select a valid type of story to download.',
+		'required' => 'Please select a valid type of story to download.',
 	) ,
 	'from_date' => array(
 		'date_mmddyyyy' => 'The FROM date field does not appear to contain a valid date.',
 		'range' => 'Please enter a valid FROM date. It cannot be greater than today.',
 	) ,
 	'incident_active' => array(
-		'between' => 'Please enter a valid value for Approve This Report',
-		'required' => 'Please enter a valid value for Approve This Report',
+		'between' => 'Please enter a valid value for Approve This Story',
+		'required' => 'Please enter a valid value for Approve This Story',
 	) ,
 	'incident_ampm' => array(
 		'validvalues' => 'The am/pm field does not appear to contain a valid value.',
@@ -74,13 +74,13 @@ $lang = array(
 		'length' => 'Please enter a valid value for Source Reliability.',
 	) ,
 	'incident_title' => array(
-		'length' => 'The "Report Title" field must be at least 3 and no more than 200 characters long.',
-		'required' => 'The "Report Title" field is required.',
-		'csrf' => 'Possible CSRF attack. Did you really mean to create/edit a report?',
+		'length' => 'The "Story Title" field must be at least 3 and no more than 200 characters long.',
+		'required' => 'The "Story Title" field is required.',
+		'csrf' => 'Possible CSRF attack. Did you really mean to create/edit a story?',
 	) ,
 	'incident_verified' => array(
-		'between' => 'Please enter a valid value for Verify This Report.',
-		'required' => 'Please enter a valid value for Verify This Report.',
+		'between' => 'Please enter a valid value for Verify This Story.',
+		'required' => 'Please enter a valid value for Verify This Story.',
 	) ,
 	'incident_video' => array(
 		'url' => 'The video links field does not appear to contain a valid URL.',
@@ -91,9 +91,9 @@ $lang = array(
 	) ,
 	'locale' => array(
 		'alpha_dash' => 'The locale field has an incorrect value. ',
-		'exists' => 'This report already has a translation for this language.',
+		'exists' => 'This story already has a translation for this language.',
 		'length' => 'The locale field has an incorrect value. ',
-		'locale' => 'The Original Report and the Translation have the same locale (language).',
+		'locale' => 'The Original Story and the Translation have the same locale (language).',
 		'required' => 'The locale is required.',
 	) ,
 	'location_name' => array(

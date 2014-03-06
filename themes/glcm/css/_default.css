@@ -21,6 +21,8 @@ div.submit-incident a, div.submit-incident a:hover,
 .btn_submit, .btn_submit:hover { 
 	background-color: #FF9950;
 	color: #333333;
+}
+div.submit-incident a, div.submit-incident a:hover {
 	background-image: url(../../glcm/images/submit-incident.png);
 	background-position: 200px 7px;
 }
