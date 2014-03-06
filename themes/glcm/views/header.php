@@ -56,29 +56,49 @@
 				<span><?php echo $site_tagline; ?></span>
 			</div>
 			<?php else: ?>
-			<a href="<?php echo url::site();?>"><img src="<?php echo $banner; ?>" alt="<?php echo $site_name; ?>" /></a>
+			<a href="<?php echo url::site();?>" id="glcm-logo"><img src="<?php echo $banner; ?>" alt="<?php echo $site_name; ?>" /></a>
 			<?php endif; ?>
 			<!-- / logo -->
-		
-		<div id="get-updates">		
-			<!-- submit incident -->
-			<?php echo $submit_btn; ?>
-			<!-- / submit incident -->
-		</div>
 			
-                <!-- searchbox -->
-		<div id="searchbox">
-			<!-- searchform -->
-			<?php echo $search; ?>
-			<!-- / searchform -->
-		</div>
-		<!-- / searchbox -->
-		<div id="socialmedia">
-			<a href="https://www.facebook.com/GreatLakesCommonsMap" target="_blank"> 
-			<img src="http://greatlakescommonsmap.org/media/img/facebook.png" alt="Facebook" /> </a>
-			<a href="https://www.youtube.com/user/GreatLakesCommonsMap/" target="_blank">
-			<img src="http://greatlakescommonsmap.org/media/img/youtube.png" alt="YouTube" /></a>
-		</div>
+			<div id="banner-functions">
+				<!-- searchbox -->
+				<div id="searchbox">
+					<!-- searchform -->
+					<?php echo $search; ?>
+					<!-- / searchform -->
+				</div>
+				<!-- / searchbox -->
+			
+				<div id="get-updates">		
+					<!-- submit incident -->
+					<?php echo $submit_btn; ?>
+					<!-- / submit incident -->
+				</div>
+				
+				<div id="socialmedia">
+					<!-- Youtube -->
+					<a href="https://www.youtube.com/user/GreatLakesCommonsMap/" target="_top">
+						<img src="/media/img/youtube_32.png" alt="YouTube" />
+					</a>
+					<!-- G+ -->
+					<a href="https://plus.google.com/u/0/communities/112084558161235826155?prsrc=3" target="_top">
+						<img src="/media/img/google-plus_32.png" alt="Google+" />
+					</a>
+					<!-- Twitter -->
+					<a href="https://" target="_top">
+						<img src="/media/img/twitter_32.png" alt="Twitter" />
+					</a>
+					<!-- MeetUp -->
+					<a href="https://" target="_top">
+						<img src="/media/img/meetup_32.png" alt="MeetUp" />
+					</a>
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/GreatLakesCommonsMap" target="_top">
+						<img src="/media/img/facebook_32.png" alt="Facebook" />
+					</a>
+				</div>
+				
+			</div>
 
 			<?php
 				// Action::main_sidebar - Add Items to the Entry Page Sidebar

@@ -6,18 +6,24 @@ table.table-list tbody tr td a,
 div.footermenu ul li a,
 div.search-form input.text  { color: #d25e4f; }
 div.search-form input.text:focus { border-color: #D25E4F; }
-div.submit-incident a, .btn_submit,
+
 div.filters ul li a:hover, div.filters ul li a.active,
 ul.category-filters li a:hover, ul.category-filters li a.active { background-color:#D25E4F; }
 
 /* Lighter Primary Color - for hover effects */
 div#loggedin_user_action a, div#loggedin_user_action a:visited { color:#d25e4f; }
-div.submit-incident a:hover, .btn_submit:hover,
 div.search-form input.searchbtn,
 div#mainmenu ul li a:hover,
 div#mainmenu a.active { background-color:#d25e4f; }
 
-
+/* GLCM Colouring */
+div.submit-incident a, div.submit-incident a:hover,
+.btn_submit, .btn_submit:hover { 
+	background-color: #FF9950;
+	color: #333333;
+	background-image: url(../../glcm/images/submit-incident.png);
+	background-position: 200px 7px;
+}
 
 /* general styles */
 h1, h2, h3, h4, h5, h6{
@@ -53,32 +59,6 @@ position: relative;
 margin:0 auto;
 }
 
-div#searchbox {
-position: absolute;
-right: 0;
-border: none;
-background: transparent;
-width: auto;
-padding: 20px 0px 0 0;
-}
-
-/* submit incident */
-div.submit-incident{
-margin: 0px 0 0 0;
-float: right;
-width: 300px;
-padding: 50px 10px 10px 10px; top:10%;
-}
-
-div#get-updates {
-}
-
-div#socialmedia {
-padding: 0px 0px 10px;
-margin: -25px 0 0;
-float: right;
-}
-
 div#loggedin_user_action {
 float: left;
 width: auto;
@@ -91,28 +71,6 @@ width: auto;
 display: block;
 float: left;
 color:#5396ff;
-}
-div.search-form input.text {
-border: 1px solid;
-}
-div.search-form input.text:focus {
-border: 1px solid;
-}
-div.search-form input.searchbtn {
-width: auto;
-height: auto;
-border: 0;
-text-indent: 0;
-color: #FFFFFF;
-display: block;
-font-size: 12px;
-background-image:none;
-background-color:#529bf5;
-margin-left: 10px;
-line-height: 17px;
-padding: 2px 5px 3px;
-text-transform: uppercase;
-text-shadow: 0px 0px 0 #424242;
 }
 
 /* header */
@@ -136,11 +94,92 @@ color: #999;
 font-family: 'Georgia', serif;
 }
 
+#glcm-logo {
+	width: 65%;
+}
+
+div#banner-functions{
+	float: right;
+	margin: 40px 40px 30px 0;
+}
+
+div#searchbox{
+	 position: relative;
+	 border-style: none;
+	 height: 21px;
+	 background: none;
+	 padding: 0;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: auto;
+}
+
+div.search-form {
+	position: relative;
+	float: none;
+	margin: auto;
+}
+
+div.search-form input.text {
+	border: 1px solid;
+}
+div.search-form input.text:focus {
+	border: 1px solid;
+}
+div.search-form input.searchbtn {
+	width: auto;
+	height: auto;
+	border: 0;
+	text-indent: 0;
+	color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+	background-image:none;
+	background-color: #D25E4F;
+	margin-left: 10px;
+	line-height: 17px;
+	padding: 3px 5px 2px;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 0 #424242;
+}
+
+div#get-updates {
+	position: relative;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/* submit incident */
+div.submit-incident{
+	position: relative;
+	width: auto;
+	height: 34px;
+	margin: 0px 0 0 0;
+}
+
+div.submit-incident a, div.submit-incident a:hover{
+	float: none;
+  	display: block;
+}
 /* submit report button */
 div.submit-incident a, .btn_submit {
-text-shadow: 0px 0px 0 #424242;
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
+	text-shadow: 0px 0px 0 #424242;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+div#socialmedia {
+	position: relative;
+	margin-left: 7px;
+}
+
+div#socialmedia a {
+	margin: 0 5px;
+}
+
+div#socialmedia a:hover{
+	text-decoration: none;
 }
 
 /* primary nav */
@@ -429,8 +468,9 @@ div.search-form input.text:focus {
 }
 
 div.submit-incident a, div.submit-incident a:hover{
-    padding: 6px 8px 8px 32px;
-    text-transform: none;
+    padding: 8px 8px 7px 32px;
+	font-family: open-sans,Helvetica,sans-serif;
+    text-transform: uppercase;
     font-weight: normal;
 }
 
@@ -595,16 +635,6 @@ a.rem { background:url(../images/icon-minus.gif) no-repeat;}
 }
 
 ul.filter-list li a span.item-swatch { display:block; height:16px; width:16px; margin-right: 8px; border:1px solid white; float:left; }
-
-div#socialmedia {
-	padding-right:10px;
-}
-
-div.search-form {
-    float: left;
-    margin: 10px 10px 0 5px;
-    padding: 0;
-}
 
 #incident_description_ifr {
 	height: 215px !important;
