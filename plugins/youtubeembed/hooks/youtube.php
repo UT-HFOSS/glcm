@@ -15,9 +15,10 @@
 
 class youtube {
 
-	// Default video dimensions
+	// Default video dimensions/styles
 	var $embed_height = 360;
 	var $embed_width = 540;
+	var $object_realign_markup = "";
 	
 	/**
 	 * Registers the main event add method
@@ -56,11 +57,13 @@ class youtube {
 		{
 			if (Router::$method == 'index')
 			{
+				// Slightly different embed layout on these pages
+				$this->embed_height = 315;
+				$this->embed_width = 560;
+				$this->object_realign_markup = ' style="display: block; margin: 0 auto;"';
+				
 				// Add to content on any custom pages
 				Event::add('ushahidi_filter.page_description', array($this, '_embed_youtube'));
-				
-                // Add resizing script
-				Event::add('ushahidi_action.header_scripts', array($this, '_add_resizing_scipt'));
 			}
 		}
 	}
@@ -102,7 +105,9 @@ class youtube {
 	private function _auto_embed($text)
 	{
 		// Finds all http/https/ftp/ftps links that are not part of an existing html anchor
-		if (preg_match_all('~\b(?<!href="|">)(?:ht|f)tps?://\S+(?:/|\b)~i', $text, $matches))
+		// JP: Changed to handle cases where $text is compressed before getting here (ie when
+		// tinyMCE replaces newlines with <br>).
+		if (preg_match_all('~\b(?<!href="|">)(?:ht|f)tps?://[^<\s]+(?:/|\b)~i', $text, $matches))
 		{
 			foreach ($matches[0] as $match)
 			{
@@ -114,7 +119,7 @@ class youtube {
 				}
 			}
 		}
-		
+
 		return $text;
 	}
 	
@@ -122,7 +127,7 @@ class youtube {
 	{
 		if ($id)
 		{
-			return '<div style="margin:15px 0 15px 0"><object width="'.$this->embed_width.'" height="'.$this->embed_height.'"><param name="movie" value="//www.youtube.com/v/'.$id.'&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/'.$id.'&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="'.$this->embed_width.'" height="'.$this->embed_height.'"></embed></object></div>';
+			return '<div style="margin:15px 0 15px 0"><object width="'.$this->embed_width.'" height="'.$this->embed_height.'"'.$this->object_realign_markup.'><param name="movie" value="//www.youtube.com/v/'.$id.'&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/'.$id.'&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="'.$this->embed_width.'" height="'.$this->embed_height.'"></embed></object></div>';
 		}
 		else
 		{
