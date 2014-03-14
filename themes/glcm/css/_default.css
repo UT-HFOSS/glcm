@@ -16,17 +16,6 @@ div.search-form input.searchbtn,
 div#mainmenu ul li a:hover,
 div#mainmenu a.active { background-color:#d25e4f; }
 
-/* GLCM Colouring */
-div.submit-incident a, div.submit-incident a:hover,
-.btn_submit, .btn_submit:hover { 
-	background-color: #FF9950;
-	color: #333333;
-}
-div.submit-incident a, div.submit-incident a:hover {
-	background-image: url(../../glcm/images/submit-incident.png);
-	background-position: 200px 7px;
-}
-
 /* general styles */
 h1, h2, h3, h4, h5, h6{
 font-family: "adelle", Helvetica, sans-serif;
@@ -102,7 +91,8 @@ font-family: 'Georgia', serif;
 
 div#banner-functions{
 	float: right;
-	margin: 40px 40px 30px 0;
+	margin: 30px 40px 30px 0;
+	width: 30%;
 }
 
 div#searchbox{
@@ -122,12 +112,28 @@ div.search-form {
 	margin: auto;
 }
 
+/* I really don't like how the view spits these out in a list... to refactor */
+div.search-form ul {
+	width: 100%;
+}
+
+div.search-form ul li:first-child {
+	width: 72%;
+}
+
+div.search-form ul li:nth-child(2) {
+	float: right;
+}
+
 div.search-form input.text {
 	border: 1px solid;
+	width: 100%;
 }
+
 div.search-form input.text:focus {
 	border: 1px solid;
 }
+
 div.search-form input.searchbtn {
 	width: auto;
 	height: auto;
@@ -147,33 +153,64 @@ div.search-form input.searchbtn {
 
 div#get-updates {
 	position: relative;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 /* submit incident */
-div.submit-incident{
+div.submit-incident {
 	position: relative;
 	width: auto;
-	height: 34px;
+	height: 50px;
 	margin: 0px 0 0 0;
 }
 
-div.submit-incident a, div.submit-incident a:hover{
+div.submit-incident a:after {
+    background: url(/themes/glcm/images/submit-incident.png);
+    width: 16px;
+    height: 16px;
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: 20px;
+    right: 250px
+}
+
+div.submit-incident a, div.submit-incident a:hover {
+	padding: 10px 0px 10px 0px;
+	font-family: open-sans,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
 	float: none;
   	display: block;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	font-size: 20px;
+	background-position: 200px 7px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+	text-align: center;
+	background: linear-gradient(#169BD0, #0D7FAE), url("/themes/glcm/images/submit-incident.gif") no-repeat;
+	color: #FFFFFF;
+	border: 1px solid rgba(0,0,0,0.3);
 }
+
+div.submit-incident a:hover {
+	background: linear-gradient(#1DA5DB, #0F87BA);
+}
+
 /* submit report button */
-div.submit-incident a, .btn_submit {
+.btn_submit, .btn_submit:hover {
 	text-shadow: 0px 0px 0 #424242;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
+	background-color: #D25E4F;
+	color: #FFFFFF;
 }
-
 
 div#socialmedia {
 	position: relative;
-	margin-left: 7px;
+	margin-left: 35px;
 }
 
 div#socialmedia a {
@@ -467,13 +504,6 @@ div.search-form input.text{
 
 div.search-form input.text:focus { 
 	border-color: #d25E4F; 
-}
-
-div.submit-incident a, div.submit-incident a:hover{
-    padding: 8px 8px 7px 32px;
-	font-family: open-sans,Helvetica,sans-serif;
-    text-transform: uppercase;
-    font-weight: normal;
 }
 
 div.field-instructions{
