@@ -178,7 +178,7 @@ div.submit-incident a:after {
 
 div.submit-incident a, div.submit-incident a:hover {
 	padding: 10px 0px 10px 0px;
-	font-family: open-sans,Helvetica,sans-serif;
+	font-family: Helvetica,sans-serif;
     text-transform: uppercase;
     font-weight: 600;
 	float: none;
