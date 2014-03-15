@@ -77,23 +77,23 @@
 				
 				<div id="socialmedia">
 					<!-- Youtube -->
-					<a href="https://www.youtube.com/user/GreatLakesCommonsMap/" target="_top">
+					<a href="https://www.youtube.com/user/GreatLakesCommonsMap/" target="_blank">
 						<img src="/themes/glcm/images/youtube_32.png" alt="YouTube" />
 					</a>
 					<!-- G+ -->
-					<a href="https://plus.google.com/u/0/communities/112084558161235826155?prsrc=3" target="_top">
+					<a href="https://plus.google.com/u/0/communities/112084558161235826155?prsrc=3" target="_blank">
 						<img src="/themes/glcm/images/google-plus_32.png" alt="Google+" />
 					</a>
 					<!-- Twitter -->
-					<a href="https://twitter.com/GL_Commons" target="_top">
+					<a href="https://twitter.com/GL_Commons" target="_blank">
 						<img src="/themes/glcm/images/twitter_32.png" alt="Twitter" />
 					</a>
 					<!-- MeetUp (link TBD) -->
-					<a>
+					<a href="http://www.meetup.com/Great_Lakes_Commons" target="_blank">
 						<img src="/themes/glcm/images/meetup_32.png" alt="MeetUp" />
 					</a>
 					<!-- Facebook -->
-					<a href="https://www.facebook.com/GreatLakesCommonsMap" target="_top">
+					<a href="https://www.facebook.com/GreatLakesCommonsMap" target="_blank"">
 						<img src="/themes/glcm/images/facebook_32.png" alt="Facebook" />
 					</a>
 				</div>
