@@ -179,8 +179,8 @@ div.submit-incident a:after {
 div.submit-incident a, div.submit-incident a:hover {
 	padding: 10px 0px 10px 0px;
 	font-family: Helvetica,sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
+	text-transform: uppercase;
+	font-weight: 600;
 	float: none;
   	display: block;
 	-moz-border-radius: 7px;
@@ -190,13 +190,31 @@ div.submit-incident a, div.submit-incident a:hover {
 	background-position: 200px 7px;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 	text-align: center;
-	background: linear-gradient(#169BD0, #0D7FAE), url("/themes/glcm/images/submit-incident.gif") no-repeat;
+
+	background: #169BD0; /* Old browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#169BD0), to(#0D7FAE)); /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+	background: -webkit-linear-gradient(top, #169BD0, #0D7FAE); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background: -moz-linear-gradient(top, #169BD0, #0D7FAE); /* Firefox 3.6 - 15 */
+	background: -o-linear-gradient(top, #169BD0, #0D7FAE); /* Opera 11.1 - 12 */
+	background: linear-gradient(to bottom, #169BD0, #0D7FAE); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#169BD0, endColorstr=#0D7FAE); /* "Invalid", but works in 6-8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#169BD0, endColorstr=#0D7FAE)" /* Valid, works in 8-9 */
+	background: -ms-linear-gradient(top, #169BD0, #0D7FAE); /* IE10+ */
+
 	color: #FFFFFF;
 	border: 1px solid rgba(0,0,0,0.3);
 }
 
 div.submit-incident a:hover {
-	background: linear-gradient(#1DA5DB, #0F87BA);
+	background: #1DA5DB; /* Old browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#1DA5DB), to(#0F87BA)); /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+	background: -webkit-linear-gradient(top, #1DA5DB, #0F87BA); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background: -moz-linear-gradient(top, #1DA5DB, #0F87BA); /* Firefox 3.6 - 15 */
+	background: -o-linear-gradient(top, #1DA5DB, #0F87BA); /* Opera 11.1 - 12 */
+	background: linear-gradient(to bottom, #1DA5DB, #0F87BA); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#1DA5DB, endColorstr=#0F87BA); /* "Invalid", but works in 6-8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1DA5DB, endColorstr=#0F87BA)" /* Valid, works in 8-9 */
+	background: -ms-linear-gradient(top, #1DA5DB, #0F87BA); /* IE10+ */
 }
 
 /* submit report button */
